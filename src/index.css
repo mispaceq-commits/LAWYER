@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --font-caslon: "Libre Caslon Text", Georgia, serif;
+  --font-lato: "Lato", system-ui, -apple-system, sans-serif;
+  --font-quicksand: "Quicksand", sans-serif;
+  --font-allura: "Allura", cursive;
+
+  --color-navy: #203F6E;
+  --color-navy-dark: #11223B;
+  --color-navy-deep: #0B1728;
+  --color-blue: #3092D1;
+  --color-blue-tint: #F0F7FC;
+  --color-blue-soft: #E1F0FA;
+  --color-accent-red: #C93B2B;
+  --color-gold: #C5A059;
+}
+
+.font-caslon {
+  font-family: 'Libre Caslon Text', Georgia, serif;
+}
+
+.font-lato {
+  font-family: 'Lato', system-ui, -apple-system, sans-serif;
+}
+
+.font-quicksand {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.font-allura {
+  font-family: 'Allura', cursive;
+}
+
+/* Print stylesheets for exporting the brand guidelines */
+@media print {
+  body {
+    background-color: white !important;
+    color: #1a202c !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-page {
+    page-break-after: always;
+    break-after: page;
+    box-shadow: none !important;
+    margin: 0 !important;
+    width: 100% !important;
+    height: 100vh !important;
+  }
+}
+
